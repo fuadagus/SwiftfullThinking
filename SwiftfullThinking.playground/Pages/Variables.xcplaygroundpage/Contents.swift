@@ -26,7 +26,7 @@ myNumber = 100
 print(myNumber)
 
 //if statement
-var userIsPremium: Bool = false
+var userIsPremium: Bool = true
 
 if userIsPremium == true {
     print("1 - This user is premium")
