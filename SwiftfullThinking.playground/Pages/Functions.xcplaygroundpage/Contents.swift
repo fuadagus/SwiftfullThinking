@@ -48,6 +48,38 @@ print(name)
 
 //----------------------
 
+showTheFirsScreen()
+
+func showTheFirsScreen(){
+    
+    var userDidCompleteOnBoarding: Bool = false
+    
+    var userProfileIsCreated: Bool = true
+    
+    let status = checkUserStatus(didCompleteOnBoarding: userDidCompleteOnBoarding, profileIsCreated: userProfileIsCreated)
+    
+    
+    if status {
+        print("Show first screen")
+    } else {
+        print("show onboarding screen")
+    }
+}
+
+func checkUserStatus(didCompleteOnBoarding: Bool, profileIsCreated: Bool)-> Bool {
+    if didCompleteOnBoarding && profileIsCreated {
+        return true
+    } else {
+        return false
+    }
+}
+
+
+
+
+//--------------
+
+
 
 
 
