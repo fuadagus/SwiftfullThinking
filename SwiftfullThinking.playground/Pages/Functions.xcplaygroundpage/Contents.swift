@@ -80,6 +80,40 @@ func checkUserStatus(didCompleteOnBoarding: Bool, profileIsCreated: Bool)-> Bool
 //--------------
 
 
+var title:String = "Avengers"
+
+
+func doSomething(title: String)-> Boolean {
+    if (title=="Avengers"){
+        return true
+    } else {
+        return false
+    }
+    
+//    line after this never be executed
+    
+}
+
+
+func doSomethingElse(title:String) {
+    guard title == "Avengers" else {
+        print("Not Marvel")
+        return
+    }
+    
+    print("This is Marvel Universe")
+}
+
+
+func doSomethingELse(title:String){
+    if title == "Avengers"{
+        print("This is Marvel Universe")
+    } else {
+        print("Not Marvel")
+    }
+}
+
+
 
 
 
