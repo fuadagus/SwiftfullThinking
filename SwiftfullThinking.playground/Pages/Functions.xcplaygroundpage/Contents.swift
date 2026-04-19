@@ -80,14 +80,15 @@ func checkUserStatus(didCompleteOnBoarding: Bool, profileIsCreated: Bool)-> Bool
 //--------------
 
 
-var title:String = "Avengers"
 
 
-func doSomething(title: String)-> Boolean {
+
+func doSomething1(title: String)-> String {
+    
     if (title=="Avengers"){
-        return true
+        return "Marvel"
     } else {
-        return false
+        return "Not Marvel"
     }
     
 //    line after this never be executed
@@ -95,7 +96,8 @@ func doSomething(title: String)-> Boolean {
 }
 
 
-func doSomethingElse(title:String) {
+func doSomething(title:String) {
+    let title = "Avengers"
     guard title == "Avengers" else {
         print("Not Marvel")
         return
@@ -112,6 +114,9 @@ func doSomethingELse(title:String){
         print("Not Marvel")
     }
 }
+
+doSomething(title: "sda")
+doSomething(title: "Avengers")
 
 
 
