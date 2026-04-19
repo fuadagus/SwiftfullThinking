@@ -118,6 +118,32 @@ func doSomethingELse(title:String){
 doSomething(title: "sda")
 doSomething(title: "Avengers")
 
+//calculated variables basicly a func
+//generally good when u don't need to pass data into a function
+
+let number1 = 4
+let number2 = 6
+
+func calculateNumbers()-> Int{
+    return number1 * number2
+}
+
+//or we can write as this
+var calculatedNumbers: Int {
+    return number1 * number2
+}
+
+func calculateNumbers(value1: Int, value2: Int)-> Int{
+    return value1*value2
+}
+
+let calculation = calculateNumbers()
+let calculation1 = calculatedNumbers
+let calculation2 = calculateNumbers(value1: number1, value2: number2)
+
+print(calculation1)
+print(calculation2)
+
 
 
 
